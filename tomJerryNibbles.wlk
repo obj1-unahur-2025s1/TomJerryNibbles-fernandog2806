@@ -3,6 +3,10 @@ object tom {
     var ultimoRatonComido = jerry
     var energia = 50
 
+    method energia() {
+      return energia
+    }
+
     method comer(unRaton) {
         energia = energia + 12 + unRaton.peso()
         ultimoRatonComido = unRaton
@@ -23,6 +27,9 @@ object tom {
 
 object jerry {
     var edad = 2
+    method edad(){
+        return edad
+    }
     method cumplirAnios() {
         edad + 1
     }
